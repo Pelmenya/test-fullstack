@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
+RUN npm i -g @nestjs/cli
+
 RUN npm install
 
 EXPOSE 3001

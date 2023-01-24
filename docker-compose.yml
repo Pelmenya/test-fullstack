@@ -13,4 +13,4 @@ services:
     container_name: back
     ports:
       - 3000:3000
-    command: sh -c "cd /app; rm -rf node_modules; npm install; npm run build; npm run start;"
+    command: sh -c "cd /app; rm -rf node_modules; npm i -g @nestjs/cli; npm install; npm run build; npm run start;"
